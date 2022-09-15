@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class MyDate {
+        day;
+        month;
+        year;
+
+        constructor(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+
+        }
+
+        setDay(day) {
+            this.day = day
+        }
+
+        getDay() {
+            return this.day
+        }
+
+        setMonth(month) {
+            this.month = month
+        }
+
+        getMonth() {
+            return this.month
+        }
+
+        setYear(year) {
+            this.year = year
+        }
+
+        getYear() {
+            return this.year
+        }
+
+        setDate(day, month, year) {
+            this.day = day
+            this.month = month
+            this.year = year
+        }
+
+       getDate() {
+            return this.day +"/"+ this.month +"/"+ this.year
+        }
+    }
+
+    let time = new MyDate(14, 22, 2022)
+    console.log('day1  ==========>', time)
+    day = time.setDay(10)
+    month = time.setMonth(9)
+    year = time.setYear(2022)
+    day = time.getDay()
+    month = time.getMonth()
+    year = time.getYear()
+    console.log(day)
+    MyDate = time.setDate(11, 12, 13)
+    MyDate = time.getDate()
+    console.log(MyDate)
+</script>
+</body>
+</html>
